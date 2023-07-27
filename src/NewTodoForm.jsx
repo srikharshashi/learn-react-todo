@@ -6,6 +6,7 @@ export function NewTodoForm({ onSubmit }) {
   // This function calls the function from parent component
   // and then give it the state it was set
   function handleSubmit(e) {
+    // trigger build
     e.preventDefault();
     if (newItem == "") return;
     onSubmit(newItem);
